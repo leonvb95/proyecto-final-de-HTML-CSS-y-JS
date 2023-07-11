@@ -12,6 +12,7 @@
 * {
     font-family: 'Montserrat', sans-serif; 
     margin: auto 0px;
+    font-weight: bold;
 }
 
 body {
@@ -141,8 +142,48 @@ h3 {
     display: flex;
     justify-content: space-between;
     width: 535px;
+    font-weight: bold;
 }
 
 .imgPie {
     height: 80px;
+}
+
+/* ------ historia ------*/
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.articulo {
+    display: flex;
+    gap: 30px;
+}
+
+.subtitulo {
+    font-size: 42px;
+    text-shadow: 2px 2px black;
+    color: var(--cSombra);
+    text-align: center;
+}
+
+.informacion1 {
+    width: 50%;
+    color: var(--cCrema);
+    font-weight: bold;
+}
+
+.informacion2 {
+    width: 60%;
+    color: var(--cCrema);
+    font-weight: bold;
+}
+
+.informacion3 {
+    color: var(--cCrema);
+    font-weight: bold;
 }
