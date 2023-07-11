@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root {
+    --cFondo: #181D31;
+    --cBotonHeader: #E6DDC4;
+    --cSombra: #678983;
+    --cLogo: #495579;
+    --cCrema: #F0E9D2;
+    --mayuscula: uppercase;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif; 
+    margin: auto 0px;
+}
+
+body {
+    background-color: var(--cFondo);
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 40px;
+}
+
+.listaMenu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.listaMenu>li>a {
+    text-decoration: none;
+    color: black;
+    background-color: var(--cBotonHeader);
+    padding: 10px;
+    box-shadow: 2px 3px var(--cSombra);
+    border-radius: 10px;
+    text-transform: var(--mayuscula);
+}
+
+.boton:active {
+    box-shadow: none;
+    position: relative;
+    left: 2px;
+    top: 3px;
+}
+
+header {
+    background: url(./imagenes/codigo.jpg) 50% 0 fixed;
+    font-size: 28px;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: var(--mayuscula);
+    text-shadow: 2px 2px gray, 6px 6px black;
+    color: white;
+}
+
+h3 {
+    color: var(--cSombra);
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.tarjetas {
+    margin: 150px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+    color: black;
+}
+
+.tarjeta {
+    width: 350px;
+    height: 400px;
+    background-color: var(--cBotonHeader);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 5px solid var(--cSombra);
+}
+
+.imgTarjeta {
+    width: 100%;
+    margin: 0px;
+}
+
+.textoTarjeta {
+    color: black;
+}
+
+.botonTarjeta {
+    text-decoration: none;
+    color: #F0F5E4;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--cFondo);
+    margin: 25px;
+    box-shadow: 2px 3px var(--cSombra);
+    width: 150px;
+}
+
+.botonTarjeta:active {
+    box-shadow: none;
+    position: relative;
+    left: 2px;
+    top: 3px;
+}
+
+.pie {
+    background-color: var(--cSombra);
+    display: flex;
+    justify-content: space-between  ;
+    padding: 40px;
+}
+
+.izquierda{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    text-transform: var(--mayuscula);
+    text-align: center;
+    font-weight: bolder;
+}
+
+.derecha {
+    display: flex;
+    justify-content: space-between;
+    width: 535px;
+}
+
+.imgPie {
+    height: 80px;
+}
