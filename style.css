@@ -17,13 +17,21 @@
 
 body {
     background-color: var(--cFondo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cabecera {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:20px 40px;
+    margin: 25px 0px;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 40px;
 }
 
 .listaMenu {
@@ -31,6 +39,7 @@ body {
     list-style: none;
     justify-content: space-around;
     width: 300px;
+   
 }
 
 .listaMenu>li>a {
@@ -50,7 +59,7 @@ body {
     top: 3px;
 }
 
-header {
+.titulo {
     background: url(./imagenes/codigo.jpg) 50% 0 fixed;
     font-size: 28px;
     background-size: cover;
@@ -58,6 +67,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 h1 {
@@ -67,15 +77,19 @@ h1 {
     color: white;
 }
 
-h3 {
-    color: var(--cSombra);
+main {
+    width: 100%;
+}
+
+.subtitulo {
+    font-size: 42px;
     text-shadow: 2px 2px black;
-    font-size: 40px;
+    color: var(--cSombra);
     text-align: center;
 }
 
 .tarjetas {
-    margin: 150px 20px;
+    margin:150px 0px;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -115,18 +129,12 @@ h3 {
     width: 150px;
 }
 
-.botonTarjeta:active {
-    box-shadow: none;
-    position: relative;
-    left: 2px;
-    top: 3px;
-}
-
 .pie {
     background-color: var(--cSombra);
     display: flex;
-    justify-content: space-between  ;
-    padding: 40px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0px;
 }
 
 .izquierda{
@@ -136,6 +144,7 @@ h3 {
     text-transform: var(--mayuscula);
     text-align: center;
     font-weight: bolder;
+    margin-left: 40px;
 }
 
 .derecha {
@@ -143,6 +152,7 @@ h3 {
     justify-content: space-between;
     width: 535px;
     font-weight: bold;
+    margin-right: 40px;
 }
 
 .imgPie {
@@ -154,36 +164,73 @@ h3 {
 .historia {
     display: flex;
     flex-direction: column;
-    margin: 100px;
     justify-content: space-between;
-    gap: 200px;
+    align-items: center;
+    gap: 150px;
+    width: 100%;
+    margin: 200px 0px;
 }
 
 .articulo {
     display: flex;
+    justify-content: space-between;
     gap: 30px;
+    width: 80%;
 }
 
-.subtitulo {
-    font-size: 42px;
-    text-shadow: 2px 2px black;
+.informacion {
+    color: var(--cCrema);
+    font-weight: bold;
+}
+
+.subVideo {
     color: var(--cSombra);
-    text-align: center;
+    text-shadow: 2px 2px black;
+    font-size: 40px;
 }
 
-.informacion1 {
-    width: 50%;
-    color: var(--cCrema);
-    font-weight: bold;
+.video {
+    width: 70%;
+    padding: 5px;
+    background-color: black;
+    margin: 50px 0px 150px 0px;
+    border-radius: 5px;
+}   
+
+video {
+    width: 100%;
 }
 
-.informacion2 {
-    width: 60%;
-    color: var(--cCrema);
-    font-weight: bold;
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px;
+    border-radius: 10px;
+    background-color: var(--cLogo);
 }
 
-.informacion3 {
-    color: var(--cCrema);
-    font-weight: bold;
+.botonera {
+    padding-left: 20px;
+}
+
+.repro {
+    color: #F0F5E4;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--cBotonHeader);
+    box-shadow: 2px 3px var(--cFondo);
+    width: 60px;
+}
+
+.contador {
+    color: var(--cBotonHeader);
+    padding-right: 20px;
+}
+
+/* ----- juguemos ----- */
+
+.juego {
+    padding: 100px 0px;
 }
