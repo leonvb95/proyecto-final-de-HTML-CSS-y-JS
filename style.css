@@ -26,12 +26,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 0px;
     width: 100%;
 }
 
 .logo {
     margin-left: 40px;
+}
+
+svg {
+    width: 150px;
+    height: 80px;
 }
 
 .listaMenu {
@@ -44,6 +48,9 @@ body {
 
 .listaMenu>li>a {
     text-decoration: none;
+}
+
+.boton {
     color: black;
     background-color: var(--cBotonHeader);
     padding: 10px;
@@ -233,4 +240,97 @@ video {
 
 .juego {
     padding: 100px 0px;
+}
+
+.seccionRompe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.rompeC {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.dContenedorImg {
+    display: flex;
+    width: 275px;
+    height: 400px;
+    border: 2px solid black;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dContenedorImg:hover {
+    background-color: black;
+}
+
+
+
+.imgnsRompe {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dImgRompe {
+    width: 275px;
+    height: 400px;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+/* ----- Animaciones ----- */
+
+.animacion1 {
+    animation: animacion-logo1 2s;
+}
+
+.animacion2 {
+    animation: animacion-logo2 2s;
+}
+
+@keyframes animacion-logo1 {
+
+    0%{
+        transform: translate(0px, -10px);
+        opacity: 0;
+
+    }
+
+    20%{
+        transform: translate(0px, -10px);
+        opacity: 0;
+
+    }
+    
+}
+
+@keyframes animacion-logo2 {
+
+    0%{
+        transform: translate(0px, -10px);
+        opacity: 0;
+
+    }
+
+
+
+    60%{
+        transform: translate(0px, -10px);
+        opacity: 0;
+
+    }
+    
 }
